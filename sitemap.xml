@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TDV-TODO: prefixar cada loc com o domínio público absoluto antes do go-live. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/index.html</loc></url>
+  <url><loc>/a-terra.html</loc></url>
+  <url><loc>/vinhos.html</loc></url>
+  <url><loc>/vinho-vento-nascente.html</loc></url>
+  <url><loc>/vinho-vento-atrevido.html</loc></url>
+  <url><loc>/vinho-vento-rebelde.html</loc></url>
+  <url><loc>/wine-bar.html</loc></url>
+  <url><loc>/experiencias.html</loc></url>
+  <url><loc>/tour-dos-mirantes.html</loc></url>
+  <url><loc>/piquenique-dos-ventos.html</loc></url>
+  <url><loc>/entre-vinhas-e-ventos.html</loc></url>
+  <url><loc>/vindima-dos-ventos.html</loc></url>
+  <url><loc>/caderno-dos-ventos.html</loc></url>
+  <url><loc>/visite-nos.html</loc></url>
+</urlset>

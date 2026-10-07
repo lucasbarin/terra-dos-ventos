@@ -1,0 +1,15 @@
+Version 1.1.2
+Fixed:
+- Improved styles
+Version 1.1.1
+Fixed:
+- Improved styles
+Removed:
+- Scroll to anchor
+
+Version 1.1
+	* Documentation updated
+	* Fixed contact form.php
+
+Version 1.0
+	Release

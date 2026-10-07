@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_laon-unused/
+Disallow: /.development-files/
+Disallow: /.initial-directions/
+
+# TDV-TODO: apontar o Sitemap com URL absoluta quando o domínio público existir.

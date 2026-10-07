@@ -1,0 +1,10 @@
+# Terra dos Ventos — materiais de trabalho fora do acesso web.
+# Apenas diretivas permitidas em .htaccess.
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule (^|/)\.development-files(/|$) - [F,L]
+	RewriteRule (^|/)\.initial-directions(/|$) - [F,L]
+	RewriteRule (^|/)_laon-unused(/|$) - [F,L]
+	RewriteRule \.mov$ - [F,L,NC]
+</IfModule>
