@@ -4,13 +4,14 @@
 	<title>Vinícola Terra dos Ventos | Espírito Santo do Pinhal</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/svg/icon-cor.svg" type="image/svg+xml">
 	<link rel='stylesheet' id='trx_addons-icons-css' href='js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='trx_addons-css' href='js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-layout-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
 	<link rel='stylesheet' id='woocommerce-general-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel="preload" href="fonts/tdv/TimesNewRomanPSMT.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/tdv/EyesomeScript.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-main-css' href='css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-animation-css' href='css/animation.css' type='text/css' media='all' />
@@ -20,8 +21,8 @@
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='vc_hotspot_cq_style-css' href='js/vendor/plugins/vc-extensions-bundle/hotspot/css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='tooltipster-css' href='js/vendor/plugins/vc-extensions-bundle/profilecard/css/tooltipster.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/tdv.css?v=3" />
-<link rel="icon" href="images/tdv/brand/favicon-64.png" type="image/png" />
+<link rel="stylesheet" href="css/tdv.css?v=31" />
+
 <meta name="description" content="Vinhos boutique, Wine Bar e experiências na Serra dos Encontros, em Espírito Santo do Pinhal. Conheça a Terra dos Ventos." />
 <meta property="og:title" content="Vinícola Terra dos Ventos | Espírito Santo do Pinhal" />
 <meta property="og:description" content="Vinhos boutique, Wine Bar e experiências na Serra dos Encontros, em Espírito Santo do Pinhal. Conheça a Terra dos Ventos." />
@@ -35,10 +36,10 @@
 			<header class="top_panel top_panel_style_1 without_bg_image scheme_default">
 				<a class="menu_mobile_button"></a>
 				<div class="top_panel_fixed_wrap"></div>
-				<div class="top_panel_navi scheme_dark">
+				<div class="top_panel_navi">
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
-							<a class="logo" href="index.html"><img src="images/tdv/brand/logo-horizontal-white.png" class="logo_main" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+							<a class="logo" href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-branco.svg" class="logo_main tdv-logo tdv-logo--hero" alt="Vinícola Terra dos Ventos" /></a>
 						</div>
 					</div>
 				</div>
@@ -88,7 +89,7 @@
 									<div class="wpb_column vc_column_container column-3_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<div style="width:;" class="cqtooltip-wrapper hide_on_mobile tdv-hotspots-pending" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1"><img src="images/spacer.png" alt="" />
+												<div class="cqtooltip-wrapper hide_on_mobile tdv-hotspots-pending" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1"><img src="images/spacer.png" alt="" />
 													<div class="cq-hotspots">
 														<div class="hotspot-item pulse-white " style="top:60%;left:20%;" data-top="60%" data-left="20%">
 															<a href="#" class="cq-tooltip tooltipstered" style="background:#e19931;" data-tooltip="
@@ -139,7 +140,7 @@
 												<div class="wpb_text_column wpb_content_element vc_custom_1469087355036" data-animation="animated fadeInUp">
 													<div class="wpb_wrapper tdv-hero-copy">
 														<p class="tdv-kicker">Vinícola · Espírito Santo do Pinhal</p>
-														<h1 class="tdv-hero-title">Feita de <span class="tdv-script">mistérios</span>.</h1>
+														<h1 class="tdv-hero-title tdv-display"><span class="tdv-display-serif">Feita de</span><span class="tdv-display-script">mistérios.</span></h1>
 														<p>Na Serra dos Encontros, uma terra restaurada encontra videiras, pedras, café e memórias de Portugal.</p>
 														<p>Aqui, o vento não apenas passa.<br>Ele cultiva histórias.</p>
 														<div class="tdv-hero-actions">
@@ -155,7 +156,7 @@
 									</div><div class="wpb_column vc_column_container column-3_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<div style="width:;" class="cqtooltip-wrapper hide_on_mobile tdv-hotspots-pending" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1"><img src="images/spacer.png" alt="" />
+												<div class="cqtooltip-wrapper hide_on_mobile tdv-hotspots-pending" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1"><img src="images/spacer.png" alt="" />
 													<div class="cq-hotspots">
 														<div class="hotspot-item pulse-white " style="top:35%;left:10%;" data-top="35%" data-left="10%">
 															<a href="#" class="cq-tooltip tooltipstered" style="background:#e19931;" data-tooltip="
@@ -167,7 +168,7 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;vinhos.html&quot;>Vento Rebelde</a></span><br />
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;vinho-vento-sereno.html&quot;>Vento Sereno</a></span><br />
 																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2012</span><br />
 																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;vinhos.html&quot;>Conhecer</a></span>
 																		</p>
@@ -232,7 +233,7 @@
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-grape-leafs"><span class="icon-grape-leafs"></span></div>
 															<p class="tdv-kicker">Serra dos Encontros</p>
-															<h2 class="sc_item_title sc_promo_title">Onde o vento encontra a terra.</h2>
+															<h2 class="sc_item_title sc_promo_title tdv-display"><span class="tdv-display-serif">Onde o vento encontra a</span><span class="tdv-display-script">terra.</span></h2>
 															<div class="sc_item_descr sc_promo_descr">Entre São Paulo e Minas, café e uva dividem o horizonte. A pedra sustenta os patamares. O vento atravessa os talhões. E cada escolha deixa uma marca no vinho. Aqui, origem não é uma palavra de rótulo. É aquilo que se vê, se percorre e se leva na memória.</div>
 															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="a-terra.html" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Conheça a Terra</span></span> </a>																</div>
 														</div>
@@ -254,7 +255,7 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="vinho-vento-nascente.html">
-																				<img width="360" height="480" src="images/tdv/wines/nascente/garrafa-placeholder.png" alt="Lugar reservado à fotografia da garrafa Vento Nascente" />
+																				<img width="820" height="1536" src="images/wines/vento-nascente.jpg" alt="Garrafa Vento Nascente" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
@@ -273,7 +274,7 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="vinho-vento-atrevido.html">
-																				<img width="360" height="480" src="images/tdv/wines/atrevido/garrafa-placeholder.png" alt="Lugar reservado à fotografia da garrafa Vento Atrevido" />
+																				<img width="820" height="1536" src="images/wines/vento-atrevido.jpg" alt="Garrafa Vento Atrevido" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
@@ -291,18 +292,18 @@
 																<li class="product type-product tdv-wine-card">
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
-																			<a href="vinho-vento-rebelde.html">
-																				<img width="360" height="480" src="images/tdv/wines/rebelde/garrafa-placeholder.png" alt="Lugar reservado à fotografia da garrafa Vento Rebelde" />
+																			<a href="vinho-vento-sereno.html">
+																				<img width="820" height="1536" src="images/wines/vento-sereno.jpg" alt="Garrafa Vento Sereno" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
-																				<a href="vinho-vento-rebelde.html" class="shop_link icon-link" aria-label="Ver Vento Rebelde"></a>
+																				<a href="vinho-vento-sereno.html" class="shop_link icon-link" aria-label="Ver Vento Sereno"></a>
 																			</div>
 																		</div>
 																		<div class="post_data">
 																			<div class="post_header entry-header">
-																				<h3><a href="vinho-vento-rebelde.html">Vento Rebelde</a></h3>
-																				<p>Quando a pedra sustenta o sonho e plantar onde parecia improvável se torna uma escolha.</p>
+																				<h3><a href="vinho-vento-sereno.html">Vento Sereno</a></h3>
+																				<p>O vento que desacelera. Um rosé para paisagem, mesa e encontros sem pressa.</p>
 																			</div>
 																		</div>
 																	</div>
@@ -492,7 +493,7 @@
 	<footer class="site_footer_wrap scheme_dark">
 		<div class="logo_footer_wrap scheme_dark">
 			<div class="logo_footer_wrap_inner">
-				<a href="index.html"><img src="images/tdv/brand/logo-horizontal-white.png" class="logo_footer_image" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+				<a href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-branco.svg" class="logo_footer_image tdv-logo tdv-logo--footer" alt="Vinícola Terra dos Ventos" /></a>
 			</div>
 		</div>
 		<div class="socials_footer_wrap socials_wrap scheme_dark">

@@ -2137,7 +2137,7 @@ body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) 
 .top_panel_navi {
   position: relative;
   z-index: 3;
-  padding-top: 3.7em
+  padding-top: 5.7em
 }
 
 .header_title_off .top_panel_navi {

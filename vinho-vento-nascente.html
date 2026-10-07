@@ -3,7 +3,7 @@
 <head>
 	<title>Vento Nascente Syrah 2024 | Terra dos Ventos</title>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/svg/icon-cor.svg" type="image/svg+xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' id='trx_addons-icons-css' href='js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='magnific-popup-css' href='js/vendor/plugins/trx_addons/js/magnific/magnific-popup.min.css' type='text/css' media='all' />
@@ -12,7 +12,8 @@
 	<link rel='stylesheet' id='woocommerce-layout-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
 	<link rel='stylesheet' id='woocommerce-general-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel="preload" href="fonts/tdv/TimesNewRomanPSMT.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/tdv/EyesomeScript.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-main-css' href='css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-animation-css' href='css/animation.css' type='text/css' media='all' />
@@ -20,8 +21,8 @@
 	<link rel='stylesheet' id='laon_wine_house-styles-css' href='css/__styles.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-custom-css' href='css/custom.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/tdv.css?v=3" />
-<link rel="icon" href="images/tdv/brand/favicon-64.png" type="image/png" />
+<link rel="stylesheet" href="css/tdv.css?v=31" />
+
 <meta name="description" content="Conheça Vento Nascente Syrah 2024, o vinho que nasceu onde começou a história da Terra dos Ventos." />
 <meta property="og:title" content="Vento Nascente Syrah 2024 | Terra dos Ventos" />
 <meta property="og:description" content="Conheça Vento Nascente Syrah 2024, o vinho que nasceu onde começou a história da Terra dos Ventos." />
@@ -37,7 +38,7 @@
 				<div class="top_panel_navi	scheme_default">
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
-							<a class="logo" href="index.html"><img src="images/tdv/brand/logo-horizontal-color.png" class="logo_main" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+							<a class="logo" href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-cor.svg" class="logo_main tdv-logo tdv-logo--header" alt="Vinícola Terra dos Ventos" /></a>
 							<nav class="menu_main_nav_area menu_hover_fade">
 								<ul id="menu_main" class="menu_main_nav">
 <li class="menu-item"><a href="index.html"><span>Início</span></a></li>
@@ -116,11 +117,11 @@
 						
 						<div class="product type-product has-post-thumbnail first">
 														<div class="images">
-								<img width="540" height="720" src="images/tdv/wines/nascente/garrafa-placeholder.png" alt="Lugar reservado à fotografia da garrafa Vento Nascente" />
+								<img width="820" height="1536" src="images/wines/vento-nascente.jpg" alt="Garrafa Vento Nascente" />
 							</div>
 							<div class="summary entry-summary">
 								<p class="tdv-kicker">O primeiro sopro</p>
-								<h1 class="product_title entry-title">Vento Nascente</h1>
+								<h1 class="product_title entry-title tdv-display"><span class="tdv-display-serif">Vento</span><span class="tdv-display-script">Nascente</span></h1>
 								<p>Syrah 2024</p>
 								<h2>O vinho que nasceu onde tudo começou.</h2>
 								<p>Nascente é começo. É o vinho do primeiro talhão, da primeira safra e da coragem de transformar um sonho em caminho. Seu poema fala de liberdade, saudade, Portugal e continuidade. Por isso, Vento Nascente não é apenas o nome de um rótulo. É uma forma de lembrar de onde viemos e brindar para onde vamos.</p>
@@ -128,6 +129,8 @@
 									<p><strong>Tipo:</strong> Vinho tinto seco</p>
 									<p><strong>Uva:</strong> Syrah</p>
 									<p><strong>Safra:</strong> 2024</p>
+									<p><strong>Volume:</strong> 750 ml</p>
+									<p><strong>Teor alcoólico:</strong> 14,5% vol.</p>
 									<p><strong>Vinificação:</strong> Elaborado sem passagem por barricas, preservando a expressão da uva e do terroir.</p>
 									<!-- TDV-TODO: validar linguagem técnica final com a enologia -->
 									<!-- TDV-BLOCKER: temperatura de serviço do Vento Nascente ainda não publicada -->
@@ -164,14 +167,14 @@
 								<ul class="products">
 									<li class="product tdv-wine-card column-1_3">
 										<div class="post_item post_layout_thumbs">
-											<div class="post_featured hover_shop"><a href="vinho-vento-atrevido.html"><img width="360" height="480" src="images/tdv/wines/atrevido/garrafa-placeholder.png" alt="Vento Atrevido" /></a><div class="mask"></div></div>
+											<div class="post_featured hover_shop"><a href="vinho-vento-atrevido.html"><img width="820" height="1536" src="images/wines/vento-atrevido.jpg" alt="Garrafa Vento Atrevido" /></a><div class="mask"></div></div>
 											<div class="post_data"><h3><a href="vinho-vento-atrevido.html">Vento Atrevido</a></h3></div>
 										</div>
 									</li>
 									<li class="product tdv-wine-card column-1_3">
 										<div class="post_item post_layout_thumbs">
-											<div class="post_featured hover_shop"><a href="vinho-vento-rebelde.html"><img width="360" height="480" src="images/tdv/wines/rebelde/garrafa-placeholder.png" alt="Vento Rebelde" /></a><div class="mask"></div></div>
-											<div class="post_data"><h3><a href="vinho-vento-rebelde.html">Vento Rebelde</a></h3></div>
+											<div class="post_featured hover_shop"><a href="vinho-vento-sereno.html"><img width="820" height="1536" src="images/wines/vento-sereno.jpg" alt="Garrafa Vento Sereno" /></a><div class="mask"></div></div>
+											<div class="post_data"><h3><a href="vinho-vento-sereno.html">Vento Sereno</a></h3></div>
 										</div>
 									</li>
 								</ul>
@@ -186,7 +189,7 @@
 <footer class="site_footer_wrap scheme_dark">
 			<div class="logo_footer_wrap scheme_dark">
 				<div class="logo_footer_wrap_inner">
-					<a href="index.html"><img src="images/tdv/brand/logo-horizontal-white.png" class="logo_footer_image" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+					<a href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-branco.svg" class="logo_footer_image tdv-logo tdv-logo--footer" alt="Vinícola Terra dos Ventos" /></a>
 				</div>
 			</div>
 			<div class="socials_footer_wrap socials_wrap scheme_dark">

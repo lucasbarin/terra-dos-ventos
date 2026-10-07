@@ -31,29 +31,32 @@ usar o estado editorial "A mesa está sendo preparada".
 ## 3. VINHOS
 
 ### Vento Nascente
-- [ ] Syrah 2024 confirmado
-- [ ] ficha técnica validada
-- [ ] temperatura de serviço validada
+- [ ] Syrah 2024
+- [ ] 14,5% vol.
+- [ ] temperatura de serviço pendente
 - [ ] imagem final
 
 ### Vento Atrevido
-- [ ] Syrah & Pinot Noir confirmado
-- [ ] método Charmat confirmado
-- [ ] temperatura 6–8 °C confirmada
-- [ ] classificação de açúcar confirmada antes de publicar sobremesas
+- [ ] método Charmat confirmado para safra 2025
+- [ ] Syrah & Pinot Noir confirmados para safra 2025
+- [ ] Brut confirmado
+- [ ] safra 2025
+- [ ] 11,0% vol.
 - [ ] imagem final
 
-### Vento Rebelde
-- [ ] safra
-- [ ] uva
-- [ ] vinificação
-- [ ] amadurecimento
-- [ ] perfil
-- [ ] temperatura
-- [ ] harmonização
-- [ ] imagem
+### Vento Sereno
+- [ ] categoria Rosé confirmada
+- [ ] safra 2025 confirmada
+- [ ] volume 750 ml confirmado
+- [ ] teor alcoólico 11,7% confirmado
+- [ ] uva/corte validado
+- [ ] vinificação validada
+- [ ] perfil sensorial validado
+- [ ] temperatura de serviço validada
+- [ ] harmonizações validadas
+- [ ] imagem final
 
-Não publicar ficha inventada.
+Não publicar ficha inventada. Vento Rebelde não é produto atual.
 
 ## 4. EXPERIÊNCIAS
 

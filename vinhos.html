@@ -3,11 +3,12 @@
 <head>
 	<title>Vinhos Terra dos Ventos | Serra dos Encontros</title>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/svg/icon-cor.svg" type="image/svg+xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' id='trx_addons-icons-css' href='js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='trx_addons-css' href='js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel="preload" href="fonts/tdv/TimesNewRomanPSMT.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/tdv/EyesomeScript.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-main-css' href='css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-animation-css' href='css/animation.css' type='text/css' media='all' />
@@ -15,8 +16,8 @@
 	<link rel='stylesheet' id='laon_wine_house-styles-css' href='css/__styles.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-custom-css' href='css/custom.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/tdv.css?v=3" />
-<link rel="icon" href="images/tdv/brand/favicon-64.png" type="image/png" />
+<link rel="stylesheet" href="css/tdv.css?v=31" />
+
 <meta name="description" content="Conheça os vinhos Terra dos Ventos e as histórias que cada rótulo leva da Serra dos Encontros para a taça." />
 <meta property="og:title" content="Vinhos Terra dos Ventos | Serra dos Encontros" />
 <meta property="og:description" content="Conheça os vinhos Terra dos Ventos e as histórias que cada rótulo leva da Serra dos Encontros para a taça." />
@@ -32,7 +33,7 @@
 				<div class="top_panel_navi						scheme_default">
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
-							<a class="logo" href="index.html"><img src="images/tdv/brand/logo-horizontal-color.png" class="logo_main" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+							<a class="logo" href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-cor.svg" class="logo_main tdv-logo tdv-logo--header" alt="Vinícola Terra dos Ventos" /></a>
 							<nav class="menu_main_nav_area menu_hover_fade">
 								<ul id="menu_main" class="menu_main_nav">
 <li class="menu-item"><a href="index.html"><span>Início</span></a></li>
@@ -66,7 +67,7 @@
 						<div class="top_panel_title">
 							<div class="page_title">
 								<p class="tdv-kicker">Vinhos Terra dos Ventos</p>
-								<h1 class="page_caption">Do vento ao <span class="tdv-script">vinho</span>.</h1>
+								<h1 class="page_caption tdv-display"><span class="tdv-display-serif">Do vento ao</span><span class="tdv-display-script">vinho.</span></h1>
 							</div>
 							<div class="breadcrumbs"><a class="breadcrumbs_item home" href="index.html">Início</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Vinhos</span></div>
 						</div>
@@ -115,7 +116,7 @@
 											<div class="wpb_wrapper">
 												<a id="sc_anchor_nascente" class="sc_anchor" title="Vento Nascente" data-icon="" data-url=""></a>
 												<div class="sc_promo sc_promo_default sc_promo_size_large sc_promo_image_fit" data-animation="animated fadeInUp">
-													<div class="sc_promo_image tdv-ph" style="background-color:#541B4F;background-image:url(images/tdv/wines/nascente/garrafa-placeholder.png);right: 0;"></div>
+													<div class="sc_promo_image tdv-ph tdv-bottle-photo" style="background-color:#fff;background-image:url(images/wines/vento-nascente.jpg);right: 0;"></div>
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: left;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<p class="tdv-kicker">O primeiro sopro</p>
@@ -136,7 +137,7 @@
 											<div class="wpb_wrapper">
 												<a id="sc_anchor_atrevido" class="sc_anchor" title="Vento Atrevido" data-icon="" data-url=""></a>
 												<div class="sc_promo sc_promo_default sc_promo_size_large sc_promo_image_fit" data-animation="animated fadeInUp">
-													<div class="sc_promo_image tdv-ph" style="background-color:#825A5B;background-image:url(images/tdv/wines/atrevido/garrafa-placeholder.png);left: 0;"></div>
+													<div class="sc_promo_image tdv-ph tdv-bottle-photo" style="background-color:#fff;background-image:url(images/wines/vento-atrevido.jpg);left: 0;"></div>
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: right;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<p class="tdv-kicker">Frescor · encontro · celebração</p>
@@ -155,15 +156,15 @@
 									<div class="wpb_column vc_column_container column-12_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<a id="sc_anchor_rebelde" class="sc_anchor" title="Vento Rebelde" data-icon="" data-url=""></a>
+												<a id="sc_anchor_sereno" class="sc_anchor" title="Vento Sereno" data-icon="" data-url=""></a>
 												<div class="sc_promo sc_promo_default sc_promo_size_large sc_promo_image_fit" data-animation="animated fadeInUp">
-													<div class="sc_promo_image tdv-ph" style="background-color:#9E795D;background-image:url(images/tdv/wines/rebelde/garrafa-placeholder.png);right: 0;"></div>
+													<div class="sc_promo_image tdv-ph tdv-bottle-photo" style="background-color:#fff;background-image:url(images/wines/vento-sereno.jpg);right: 0;"></div>
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: left;">
 														<div class="sc_promo_text_inner sc_align_center">
-															<p class="tdv-kicker">Pedra · coragem · convicção</p>
-															<h2 class="sc_item_title sc_promo_title">Vento Rebelde</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">Quando a pedra sustenta o sonho.</h5>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="vinho-vento-rebelde.html" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Conheça este vinho</span></span> </a></div>
+															<p class="tdv-kicker">Leveza · paisagem · tempo</p>
+															<h2 class="sc_item_title sc_promo_title">Vento Sereno</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">Rosé 2025. Quando o vento abranda, a paisagem encontra outro ritmo.</h5>
+															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="vinho-vento-sereno.html" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Conheça este vinho</span></span> </a></div>
 														</div>
 													</div>
 												</div>
@@ -189,7 +190,7 @@
 			<footer class="site_footer_wrap scheme_dark">
 				<div class="logo_footer_wrap scheme_dark">
 					<div class="logo_footer_wrap_inner">
-						<a href="index.html"><img src="images/tdv/brand/logo-horizontal-white.png" class="logo_footer_image" alt="Vinícola Terra dos Ventos" width="511" height="120" /></a>
+						<a href="index.html" aria-label="Vinícola Terra dos Ventos — Página inicial"><img src="images/svg/logotipo-vertical-branco.svg" class="logo_footer_image tdv-logo tdv-logo--footer" alt="Vinícola Terra dos Ventos" /></a>
 					</div>
 				</div>
 				<div class="socials_footer_wrap socials_wrap scheme_dark">

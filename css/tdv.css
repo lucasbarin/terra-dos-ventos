@@ -1,6 +1,51 @@
 /* Terra dos Ventos — identidade sobre o Laon.
    Carregado depois do CSS do tema.
-   Eyesome Script aguarda licença web: o acento usa itálico de Times. */
+   Voz tipográfica: TDV Times (estrutura) e Eyesome Script (gesto). */
+
+@font-face {
+	font-family: "TDV Times";
+	src: url("../fonts/tdv/TimesNewRomanPSMT.woff2") format("woff2"),
+		url("../fonts/tdv/TimesNewRomanPSMT.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "TDV Times";
+	src: url("../fonts/tdv/TimesNewRomanPS-ItalicMT.woff2") format("woff2"),
+		url("../fonts/tdv/TimesNewRomanPS-ItalicMT.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "TDV Times";
+	src: url("../fonts/tdv/TimesNewRomanPS-BoldMT.woff2") format("woff2"),
+		url("../fonts/tdv/TimesNewRomanPS-BoldMT.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "TDV Times";
+	src: url("../fonts/tdv/TimesNewRomanPS-BoldItalicMT.woff2") format("woff2"),
+		url("../fonts/tdv/TimesNewRomanPS-BoldItalicMT.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Eyesome Script";
+	src: url("../fonts/tdv/EyesomeScript.woff2") format("woff2"),
+		url("../fonts/tdv/EyesomeScript.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
 :root {
 	--tdv-roxo: #541B4F;
@@ -8,6 +53,12 @@
 	--tdv-argila: #9E795D;
 	--tdv-bege: #DBAD8D;
 	--tdv-tinta: #2a1818;
+	--tdv-font-primary: "TDV Times", "Times New Roman", Times, serif;
+	--tdv-font-script: "Eyesome Script", cursive;
+}
+
+html {
+	font-synthesis: none;
 }
 
 html {
@@ -15,14 +66,43 @@ html {
 }
 
 body,
+.scheme_default,
+.scheme_dark,
 input,
 textarea,
-button,
+select,
+.sc_button,
 .sc_button_title,
 .menu_main_nav > li > a,
 .menu_mobile_nav > li > a,
-.menu_footer_nav > li > a {
-	font-family: Lato, Arial, sans-serif;
+.menu_footer_nav > li > a,
+.breadcrumbs,
+.breadcrumbs a,
+.copyright_text,
+.sc_form,
+.sc_form label,
+.sc_form input,
+.sc_form textarea,
+.sc_form button {
+	font-family: var(--tdv-font-primary);
+	font-synthesis: none;
+}
+
+.menu_main_nav > li > a,
+.menu_header_nav > li > a,
+.menu_footer_nav > li > a,
+.menu_mobile .menu_mobile_nav_area > ul > li > a,
+.menu_side_nav > li > a {
+	font-family: var(--tdv-font-primary);
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	font-synthesis: none;
+}
+
+/* A Times em caixa alta é mais larga que a sans do tema. */
+.menu_main_nav > li > a {
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -37,30 +117,79 @@ h1, h2, h3, h4, h5, h6,
 .product_title,
 .sc_promo_title,
 .sc_action_item_title,
-.sc_events_title {
-	font-family: "Times New Roman", Times, serif;
+.sc_events_title,
+.sc_icons_title {
+	font-family: var(--tdv-font-primary);
+	font-synthesis: none;
 }
 
-.tdv-script {
-	font-family: "Times New Roman", Times, serif;
-	font-style: italic;
+.tdv-display {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: visible;
+}
+
+.summary .tdv-display {
+	align-items: flex-start;
+}
+
+.tdv-display-serif {
+	font-family: var(--tdv-font-primary);
 	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	line-height: 1.05;
+	font-size: 0.58em;
+}
+
+.tdv-display-script,
+.tdv-script {
+	font-family: var(--tdv-font-script);
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	line-height: 0.82;
+	font-size: 1.15em;
+	display: block;
+	overflow: visible;
+	margin-top: 0.02em;
+	padding-bottom: 0.12em;
 }
 
 .tdv-kicker,
 .sc_events_item_date,
 .tdv-page-kicker {
-	font-family: Lato, Arial, sans-serif;
+	font-family: var(--tdv-font-primary);
 	font-style: normal;
-	letter-spacing: 0.16em;
+	letter-spacing: 0.14em;
 	text-transform: uppercase;
 	font-size: 0.78rem;
 	font-weight: 700;
 }
 
+.tdv-editorial-italic,
+.tdv-motto,
+.tdv-poem {
+	font-family: var(--tdv-font-primary);
+	font-style: italic;
+	font-weight: 400;
+}
+
+.tdv-ficha strong {
+	font-family: var(--tdv-font-primary);
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.82em;
+}
+
 p.page_caption {
 	margin: 0;
-	font-family: "Times New Roman", Times, serif;
+	font-family: var(--tdv-font-primary);
 }
 
 /* Acento do tema (#e39a31) passa à paleta da marca. */
@@ -97,6 +226,8 @@ a.sc_button_simple {
 	background: var(--tdv-bege);
 	color: var(--tdv-roxo) !important;
 	padding: 0.45em 0.9em;
+	font-weight: 700;
+	letter-spacing: 0.06em;
 }
 
 .menu_main_nav > li.tdv-menu-cta > a:hover,
@@ -105,15 +236,36 @@ a.sc_button_simple {
 	color: var(--tdv-roxo) !important;
 }
 
+.tdv-logo,
 .logo_main,
 .logo_footer_image {
+	display: block;
 	width: auto;
-	max-height: 64px;
 	height: auto;
+	max-width: none;
 }
 
-.logo_footer_image {
-	max-height: 88px;
+.logo img.tdv-logo--header,
+.logo img.logo_main:not(.tdv-logo--hero) {
+	height: 8.9em;
+	width: auto;
+	max-width: none;
+	max-height: none;
+}
+
+.logo img.tdv-logo--hero {
+	height: 7em;
+	max-height: 7em;
+}
+
+.logo_footer_wrap img.tdv-logo--footer,
+.logo_footer_wrap img.logo_footer_image {
+	height: 8.5em;
+	width: auto;
+	max-height: none;
+	max-width: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Busca do WordPress não tem backend. */
@@ -152,11 +304,22 @@ a.sc_button_simple {
 .tdv-hero-title,
 .vc_custom_1469089433188 h1.tdv-hero-title {
 	color: #fff !important;
-	font-size: clamp(2.4rem, 6vw, 5.2rem);
-	line-height: 1.05;
+	font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+	line-height: 0.95;
 	font-weight: 400;
-	margin: 0.35em 0 0.4em;
+	margin: 0.35em 0 0.2em;
 	text-align: center;
+	overflow: visible;
+}
+
+.tdv-hero-title .tdv-display-serif {
+	color: #fff;
+}
+
+.tdv-hero-title .tdv-display-script {
+	color: #fff;
+	font-size: 1.22em;
+	line-height: 0.78;
 }
 
 .tdv-hero-copy,
@@ -203,17 +366,96 @@ a.sc_button_simple {
 	opacity: 0.92;
 }
 
-/* Três vinhos na grade de duas colunas do Laon. */
-.tdv-wines-3 ul.products {
+/* Três garrafas na mesma linha. O card corta a margem transparente do PNG. */
+.home_products .woocommerce.columns-2.tdv-wines-3 ul.products {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1.25rem;
+	margin: 0 !important;
+	width: 100%;
 }
 
-.tdv-wines-3 ul.products li.product {
+.home_products .woocommerce.columns-2.tdv-wines-3 ul.products::before,
+.home_products .woocommerce.columns-2.tdv-wines-3 ul.products::after {
+	display: none;
+	content: none;
+}
+
+.home_products .woocommerce.columns-2.tdv-wines-3 ul.products li.product {
 	float: none;
-	width: 46%;
-	margin: 0 2% 1.5rem;
+	box-sizing: border-box;
+	width: calc((100% - 2.5rem) / 3);
+	flex: 0 0 calc((100% - 2.5rem) / 3);
+	height: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_item {
+	height: auto;
+	margin: 0;
+	background: #fff;
+}
+
+.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_featured.hover_shop {
+	position: relative;
+	aspect-ratio: 3 / 10;
+	height: auto;
+	width: 100%;
+	margin: 0;
+}
+
+.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_featured.hover_shop > a {
+	display: block;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_featured.hover_shop img {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	bottom: auto;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	max-width: none;
+	margin: 0;
+	object-fit: contain;
+	object-position: center center;
+}
+
+@media (min-width: 769px) {
+	.row.row-o-full-height:has(.home_products) {
+		min-height: 0 !important;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.row.row-o-full-height:has(.home_products) > .wpb_column {
+		float: none;
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0;
+		grid-row: 1;
+	}
+
+	.row.row-o-full-height:has(.home_products) > .wpb_column:first-child {
+		grid-column: 1;
+	}
+
+	.row.row-o-full-height:has(.home_products) > .wpb_column:last-child {
+		grid-column: 2;
+	}
+}
+
+.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_featured.hover_shop .icons a.shop_link {
+	margin-left: 0;
 }
 
 .tdv-wines-3 .price,
@@ -234,9 +476,12 @@ a.sc_button_simple {
 }
 
 .woocommerce div.product .summary h1.product_title {
-	display: block !important;
+	display: flex !important;
+	flex-direction: column;
+	align-items: flex-start;
 	margin: 0 0 0.65em;
 	color: var(--tdv-roxo);
+	overflow: visible;
 }
 
 .tdv-wine-card .post_data,
@@ -249,13 +494,34 @@ a.sc_button_simple {
 	background-position: center;
 }
 
+.sc_promo_image.tdv-bottle-photo,
+.post_featured_bg.tdv-bottle-photo {
+	background-color: #fff !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+}
+
+.woocommerce div.product div.images img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	background: #fff;
+	border: none;
+}
+
+.tdv-related .post_featured img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	background: #fff;
+}
+
 .tdv-footer-note {
 	margin: 0.35em 0;
 }
 
 .tdv-motto {
-	font-family: "Times New Roman", Times, serif;
-	font-style: italic;
 	font-size: 1.15rem;
 }
 
@@ -281,21 +547,80 @@ a.sc_button_simple {
 }
 
 .tdv-poem {
-	font-family: "Times New Roman", Times, serif;
 	font-size: 1.15rem;
 	line-height: 1.7;
 	text-align: center;
 }
 
 .tdv-pending-note {
-	font-family: Lato, Arial, sans-serif;
 	font-size: 1rem;
-	line-height: 1.6;
+	line-height: 1.65;
 }
 
 :focus-visible {
 	outline: 2px solid var(--tdv-bege);
 	outline-offset: 3px;
+}
+
+.sc_events_detailed .sc_events_item {
+	display: flex;
+	align-items: stretch;
+	height: auto;
+	white-space: normal;
+}
+
+.sc_events_detailed .sc_events_item_date_wrap,
+.sc_events_detailed .sc_events_item_title_wrap,
+.sc_events_detailed .sc_events_item_button_wrap {
+	display: flex;
+	align-items: center;
+	float: none;
+	width: auto;
+	height: auto;
+	min-height: 4.4em;
+}
+
+.sc_events_detailed .sc_events_item_date_wrap {
+	flex: 0 0 7.4rem;
+}
+
+.sc_events_detailed .sc_events_item_title_wrap {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.sc_events_detailed .sc_events_item_button_wrap {
+	flex: 0 0 auto;
+	display: flex !important;
+}
+
+.sc_events_detailed .sc_events_item_date,
+.sc_events_detailed .sc_events_item_title,
+.sc_events_detailed .sc_events_item_button {
+	position: static;
+	top: auto;
+	left: auto;
+	width: auto;
+	transform: none;
+	overflow-wrap: normal;
+	word-break: normal;
+	hyphens: manual;
+}
+
+.sc_events_detailed .sc_events_item_date {
+	white-space: nowrap;
+	padding: 0 0.9em;
+	letter-spacing: 0.08em;
+}
+
+.sc_events_detailed .sc_events_item_title {
+	white-space: normal;
+	padding: 0.55em 1em;
+}
+
+.sc_events_detailed .sc_events_item_button {
+	white-space: nowrap;
+	padding: 0 1em;
 }
 
 .tdv-delay-1 { animation-delay: 80ms; }
@@ -304,18 +629,53 @@ a.sc_button_simple {
 .tdv-delay-4 { animation-delay: 320ms; }
 
 @media (max-width: 767px) {
-	.tdv-wines-3 ul.products li.product {
+	.top_panel_title_wrap {
+		position: relative !important;
+		top: auto !important;
+		height: auto !important;
+	}
+
+	.top_panel.without_bg_image {
+		height: auto !important;
+	}
+
+	.tdv-display-serif {
+		letter-spacing: 0.08em;
+	}
+
+	.woocommerce.columns-2.tdv-wines-3 ul.products {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.home_products .woocommerce.columns-2.tdv-wines-3 ul.products li.product {
+		width: min(46vw, 200px);
+		max-width: min(46vw, 200px);
+		height: auto;
+		flex: 0 0 auto;
+		margin: 0 0 1.25rem !important;
+	}
+
+	.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_item,
+	.home_products .woocommerce.tdv-wines-3 ul.products li.product .post_featured.hover_shop {
+		height: auto;
 		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	.tdv-hero-title {
 		font-size: clamp(2.1rem, 11vw, 3.2rem);
 	}
 
-	.logo_main {
-		max-height: 48px;
+	.logo img.tdv-logo--header,
+	.logo img.logo_main:not(.tdv-logo--hero) {
+		height: 7.2em;
+		max-height: 7.2em;
+		max-width: calc(100vw - 4.5rem);
+	}
+
+	.logo img.tdv-logo--hero {
+		max-width: calc(100vw - 4.5rem);
 	}
 }
 

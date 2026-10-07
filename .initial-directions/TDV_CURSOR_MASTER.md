@@ -42,6 +42,26 @@ mantenha a poesia no título e devolva clareza no texto explicativo e no CTA.
 
 ---
 
+# 0.1 CORREÇÃO DE PORTFÓLIO — 07/10/2026
+
+O portfólio público atual é exclusivamente:
+
+- Vento Nascente
+- Vento Atrevido
+- Vento Sereno
+
+Vento Rebelde não é vinho disponível. Não entra na Home, em Vinhos, em relacionados, em SEO, em sitemap nem em página comercial.
+
+A narrativa da pedra, dos patamares e do Douro permanece em A Terra e na paisagem. Não fica presa a um rótulo fora do portfólio.
+
+Atrevido é Espumante Rosé Brut 2025. Sereno é Rosé 2025. Não misturar fichas.
+
+Não inventar uva, vinificação, perfil, temperatura ou harmonização do Sereno. Linha sem dado confirmado fica oculta no front.
+
+Os documentos em `.development-files/` permanecem como registro histórico e não são corrigidos por esta atualização.
+
+---
+
 # 1. OBJETIVO DO SITE
 
 O site não deve apresentar a Terra dos Ventos simplesmente como
@@ -382,6 +402,29 @@ Nunca utilizar branco como texto normal sobre #DBAD8D.
 
 # 10. TIPOGRAFIA
 
+> ATUALIZAÇÃO DE DIRETRIZ — 07/10/2026
+>
+> A diretriz anterior de preservar a fonte de corpo do template Laon está revogada.
+>
+> O projeto deve utilizar os webfonts oficiais fornecidos pela marca:
+>
+> - TDV Times — Regular
+> - TDV Times — Italic
+> - TDV Times — Bold
+> - TDV Times — Bold Italic
+> - Eyesome Script — Regular
+>
+> A família Times passa a ser a fonte estrutural do site, incluindo corpo,
+> navegação, títulos, botões e informações técnicas.
+>
+> Eyesome Script é a fonte expressiva da marca e deve ser utilizada
+> seletivamente em palavras ou pequenas expressões de caráter poético.
+>
+> A substituição das famílias tipográficas NÃO implica simplificar ou
+> redimensionar globalmente o template Laon. A hierarquia e os pesos
+> visuais do template devem ser preservados e reinterpretados com os
+> pesos reais disponíveis nos webfonts da marca.
+
 A identidade determina:
 
 Títulos e subtítulos:
@@ -426,6 +469,54 @@ confirmar licença de uso web quando aplicável.
 ---
 
 # 11. LOGOTIPO
+
+> ATUALIZAÇÃO DE DIRETRIZ — 07/10/2026
+>
+> Todos os logotipos da interface pública da Terra dos Ventos devem utilizar
+> exclusivamente os seis SVGs oficiais disponíveis em `images/svg/`.
+> Versões rasterizadas não devem ser utilizadas para aplicações da marca
+> no front-end.
+>
+> O logotipo aplicado no hero principal possui max-height obrigatório de 4em.
+> 4em é o limite máximo, não um tamanho obrigatório. Se 3–3.5em produzir
+> melhor equilíbrio com o H1, utilizar o tamanho menor.
+>
+> Nunca distorcer a proporção do SVG e nunca modificar suas cores via CSS.
+
+## ATUALIZAÇÃO — LOGOTIPOS SVG
+
+As versões PNG/JPG anteriormente mencionadas deixam de ser fonte de
+implementação para a interface web.
+
+Utilizar exclusivamente:
+
+- `images/svg/logotipo-horizontal-cor.svg`
+- `images/svg/logotipo-vertical-cor.svg`
+- `images/svg/icon-cor.svg`
+- `images/svg/logotipo-horizontal-branco.svg`
+- `images/svg/logotipo-vertical-branco.svg`
+- `images/svg/icone-branco.svg`
+
+Regra de seleção:
+
+- fundo claro → versão colorida;
+- fundo escuro/fotográfico → versão branca;
+- header → preferência pela versão horizontal;
+- assinatura institucional → horizontal ou vertical conforme composição;
+- marca reduzida/favicon → símbolo.
+
+O logotipo inserido no HERO PRINCIPAL deve possuir:
+
+`max-height: 4em;`
+
+4em é o limite máximo, não um tamanho obrigatório.
+Se 3–3.5em produzir melhor equilíbrio com o H1, utilizar o tamanho menor.
+
+Nunca distorcer a proporção do SVG e nunca modificar suas cores via CSS.
+
+A orientação anterior de gerar cópias web a partir dos PNGs está revogada
+para a interface. O pacote raster e o MOV continuam apenas como arquivo
+de marca, fora do front.
 
 O pacote de marca contém versões coloridas, pretas e brancas.
 
@@ -596,7 +687,7 @@ images/
     wines/
       nascente/
       atrevido/
-      rebelde/
+      sereno/
     wine-bar/
     experiences/
     journal/
@@ -653,7 +744,7 @@ a-terra.html
 vinhos.html
 vinho-vento-nascente.html
 vinho-vento-atrevido.html
-vinho-vento-rebelde.html
+vinho-vento-sereno.html
 wine-bar.html
 experiencias.html
 tour-dos-mirantes.html
@@ -928,10 +1019,11 @@ Um Syrah de origem, caminho e continuidade.
 
 Borbulhas, frescor e irreverência para os encontros que pedem celebração.
 
-## Vento Rebelde
+## Vento Sereno
 
-Quando a pedra sustenta o sonho e plantar onde parecia improvável
-se torna uma escolha.
+O vento que desacelera.
+
+Um rosé para paisagem, mesa e encontros sem pressa.
 
 CTA:
 
@@ -1525,48 +1617,52 @@ enquanto a classificação de açúcar não estiver confirmada.
 
 ---
 
-# 43. VINHO — VENTO REBELDE
+# 43. VINHO — VENTO SERENO
+
+Substitui Vento Rebelde no portfólio público a partir de 07/10/2026.
+Vento Rebelde não é página de produto atual.
 
 Eyebrow:
 
-PEDRA • CORAGEM • CONVICÇÃO
+LEVEZA • PAISAGEM • TEMPO
 
 H1:
 
-Vento Rebelde
+Vento Sereno
+
+Subtítulo:
+
+Rosé • 2025
 
 Headline:
 
-Quando a pedra sustenta o sonho.
+Quando o vento abranda, a paisagem encontra outro ritmo.
 
-Texto:
+Copy curta de card:
 
-Há terrenos que pedem passagem.
+O vento que desacelera.
+Um rosé para paisagem, mesa e encontros sem pressa.
 
-Outros pedem convicção.
+Ficha publicada somente com dados confirmados:
 
-Vento Rebelde nasce da decisão de plantar
-onde o relevo parecia dizer não.
+- Tipo: Rosé
+- Safra: 2025
+- Volume: 750 ml
+- Teor alcoólico: 11,7% vol.
 
-Nos patamares de pedra inspirados no Douro,
-dificuldade virou arquitetura
-e a pedra passou a sustentar a videira.
+Ocultar no front, até haver dado oficial:
 
-Rebelde não por impulso.
+{{PENDING_SERENO_UVA}}
+{{PENDING_SERENO_VINIFICACAO}}
+{{PENDING_SERENO_PERFIL}}
+{{PENDING_SERENO_TEMPERATURA}}
+{{PENDING_SERENO_HARMONIZACOES}}
 
-Rebelde por certeza.
+Não reutilizar método, uvas, efervescência ou harmonizações do Vento Atrevido.
+Não inventar ficha sensorial.
 
-Campos técnicos:
-
-{{PENDING_REBELDE_SAFRA}}
-{{PENDING_REBELDE_UVA}}
-{{PENDING_REBELDE_VINIFICACAO}}
-{{PENDING_REBELDE_AMADURECIMENTO}}
-{{PENDING_REBELDE_PERFIL}}
-{{PENDING_REBELDE_TEMPERATURA}}
-{{PENDING_REBELDE_HARMONIZACOES}}
-
-Esses campos NÃO podem aparecer publicamente.
+Pauta futura possível no Caderno, sem artigo enquanto a ficha estiver incompleta:
+"Vento Sereno: quando a paisagem pede outro ritmo".
 
 ---
 
@@ -2668,10 +2764,10 @@ Vento Nascente:
 Vento Nascente Syrah 2024 | Terra dos Ventos
 
 Vento Atrevido:
-Vento Atrevido Espumante Rosé | Terra dos Ventos
+Vento Atrevido Espumante Rosé Brut 2025 | Terra dos Ventos
 
-Vento Rebelde:
-Vento Rebelde | Terra dos Ventos
+Vento Sereno:
+Vento Sereno Rosé 2025 | Terra dos Ventos
 
 Wine Bar:
 Wine Bar Terra dos Ventos | Espírito Santo do Pinhal
@@ -2720,15 +2816,19 @@ o vinho que nasceu onde começou a história da Terra dos Ventos.
 
 ## Vento Atrevido
 
-Conheça Vento Atrevido,
-espumante rosé de Syrah e Pinot Noir
-elaborado pelo método Charmat.
+Conheça Vento Atrevido Espumante Rosé Brut 2025,
+um espumante da Terra dos Ventos pensado
+para encontros e celebrações.
 
-## Vento Rebelde
+Método e uvas só entram nesta description depois de confirmados para a safra 2025.
 
-Conheça Vento Rebelde,
-um rótulo inspirado na pedra, nos patamares
-e na coragem de plantar onde parecia improvável.
+## Vento Sereno
+
+Conheça Vento Sereno Rosé 2025,
+um dos vinhos da Terra dos Ventos,
+na Serra dos Encontros, em Espírito Santo do Pinhal.
+
+Não acrescentar notas sensoriais ainda não confirmadas.
 
 ## Wine Bar
 
@@ -2948,7 +3048,7 @@ Padrão:
 
 Para bloqueadores:
 
-<!-- TDV-BLOCKER: não publicar até validar ficha técnica Vento Rebelde -->
+<!-- TDV-BLOCKER: não publicar ficha sensorial do Vento Sereno até haver dado oficial -->
 
 Não escrever TODOs vagos.
 
@@ -2998,7 +3098,7 @@ Considerar bloqueadores até validação:
 - política de chuva
 - acessibilidade física
 - restrições alimentares
-- ficha técnica Vento Rebelde
+- ficha sensorial do Vento Sereno
 - temperatura Vento Nascente
 - modelo de venda dos vinhos
 - links "Onde encontrar"
@@ -3189,7 +3289,7 @@ Formato:
 - horários
 
 ## Blockers de publicação
-- ficha Vento Rebelde
+- ficha sensorial do Vento Sereno
 - reserva Wine Bar
 
 ## Últimos arquivos alterados
@@ -3250,7 +3350,7 @@ FASE 3 — PÁGINAS PRINCIPAIS
 - Vinhos
 - Nascente
 - Atrevido
-- Rebelde
+- Sereno
 - Wine Bar
 - Experiências
 - Visite-nos
