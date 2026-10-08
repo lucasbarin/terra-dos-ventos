@@ -107,7 +107,7 @@ zero ocorrências públicas indevidas.
 - [ ] CTAs Home
 - [ ] links de vinho
 - [ ] experiências
-- [ ] Caderno
+- [x] Caderno fora do site público por enquanto
 - [ ] Instagram
 - [ ] WhatsApp
 - [ ] Maps

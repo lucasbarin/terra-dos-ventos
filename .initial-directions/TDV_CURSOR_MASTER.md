@@ -60,6 +60,8 @@ Não inventar uva, vinificação, perfil, temperatura ou harmonização do Seren
 
 Os documentos em `.development-files/` permanecem como registro histórico e não são corrigidos por esta atualização.
 
+A partir de 08/10/2026 o Caderno dos Ventos não faz parte do site público: sem página, sem menu, sem home e sem sitemap. O texto desta diretriz sobre o Caderno fica como registro, não como página a publicar agora.
+
 ---
 
 # 1. OBJETIVO DO SITE

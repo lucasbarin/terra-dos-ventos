@@ -21,7 +21,7 @@
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='vc_hotspot_cq_style-css' href='js/vendor/plugins/vc-extensions-bundle/hotspot/css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='tooltipster-css' href='js/vendor/plugins/vc-extensions-bundle/profilecard/css/tooltipster.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/tdv.css?v=31" />
+<link rel="stylesheet" href="css/tdv.css?v=36" />
 
 <meta name="description" content="Vinhos boutique, Wine Bar e experiências na Serra dos Encontros, em Espírito Santo do Pinhal. Conheça a Terra dos Ventos." />
 <meta property="og:title" content="Vinícola Terra dos Ventos | Espírito Santo do Pinhal" />
@@ -60,7 +60,6 @@
 <li class="menu-item"><a href="vinhos.html"><span>Vinhos</span></a></li>
 <li class="menu-item"><a href="wine-bar.html"><span>Wine Bar</span></a></li>
 <li class="menu-item"><a href="experiencias.html"><span>Experiências</span></a></li>
-<li class="menu-item"><a href="caderno-dos-ventos.html"><span>Caderno dos Ventos</span></a></li>
 <li class="menu-item"><a href="visite-nos.html"><span>Visite-nos</span></a></li>
 <li class="menu-item tdv-menu-cta"><a href="experiencias.html"><span>Reservar experiência</span></a></li>
 </ul>
@@ -85,7 +84,11 @@
 					<div class="content">
 						<article id="post-691" class="post_item_single post_type_page post-691 page type-page">
 							<div class="post_content entry-content">
-								<div class="row row-no-padding vc_custom_1469089433188 row-o-full-height row-o-columns-middle">
+								<div class="row row-no-padding vc_custom_1469089433188 row-o-full-height row-o-columns-middle tdv-hero-banner">
+									<!-- TDV-TODO: substituir images/laonwine.mp4 pelo filme final da propriedade -->
+									<video class="tdv-hero-video" autoplay muted loop playsinline poster="images/tdv/home/hero-placeholder.png" aria-hidden="true">
+										<source src="images/laonwine.mp4" type="video/mp4" />
+									</video>
 									<div class="wpb_column vc_column_container column-3_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
@@ -136,12 +139,12 @@
 											<div class="wpb_wrapper">
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>
-												<!-- TDV-TODO: substituir o fundo do hero por fotografia final da propriedade -->
+												<!-- TDV-TODO: o poster permanece como reserva se o vídeo não carregar -->
 												<div class="wpb_text_column wpb_content_element vc_custom_1469087355036" data-animation="animated fadeInUp">
 													<div class="wpb_wrapper tdv-hero-copy">
 														<p class="tdv-kicker">Vinícola · Espírito Santo do Pinhal</p>
 														<h1 class="tdv-hero-title tdv-display"><span class="tdv-display-serif">Feita de</span><span class="tdv-display-script">mistérios.</span></h1>
-														<p>Na Serra dos Encontros, uma terra restaurada encontra videiras, pedras, café e memórias de Portugal.</p>
+														<!-- <p>Na Serra dos Encontros, uma terra restaurada encontra videiras, pedras, café e memórias de Portugal.</p> -->
 														<p>Aqui, o vento não apenas passa.<br>Ele cultiva histórias.</p>
 														<div class="tdv-hero-actions">
 															<a href="experiencias.html" class="sc_button sc_button_simple sc_button_size_normal"><span class="sc_button_text"><span class="sc_button_title">Reserve sua experiência</span></span></a>
@@ -425,24 +428,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="row row-no-padding">
-						<div class="wpb_column vc_column_container column-12_12">
-							<div class="vc_column-inner">
-								<div class="wrap">
-									<div class="sc_promo sc_promo_default sc_promo_size_normal sc_promo_no_image" data-animation="animated fadeInUp">
-										<div class="sc_promo_text" style="width:100%;">
-											<div class="sc_promo_text_inner sc_align_center">
-												<p class="tdv-kicker">Histórias da terra</p>
-												<h2 class="sc_item_title sc_promo_title">Caderno dos Ventos</h2>
-												<p>Notas sobre a vinha, a mesa, os rótulos, a paisagem e as pessoas que seguem escrevendo este lugar.</p>
-												<div class="sc_item_button sc_button_wrap"><a href="caderno-dos-ventos.html" class="sc_button sc_button_simple sc_button_size_normal"><span class="sc_button_text"><span class="sc_button_title">Ler histórias</span></span></a></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="row vc_custom_1466154433105 row-o-full-height row-o-columns-stretch row-o-equal-height">
 						<div class="wpb_column vc_column_container column-4_12">
 							<div class="vc_column-inner ">
@@ -456,7 +441,7 @@
 									<div class="sc_promo sc_promo_default sc_promo_size_normal sc_promo_no_paddings sc_promo_no_image">
 										<div class="sc_promo_text sc_float_center" style="width: 100%;">
 											<div class="sc_promo_text_inner sc_align_center">
-												<div class="sc_promo_icon" data-icon="icon-winery"><span class="icon-winery"></span></div>
+												<div class="sc_promo_icon tdv-promo-mark"><img src="images/svg/icon-cor-outline.svg" alt="" width="444" height="264" /></div>
 												<p class="tdv-kicker">Espírito Santo do Pinhal</p>
 												<h2 class="sc_item_title sc_promo_title">Venha encontrar o seu lugar na paisagem.</h2>
 												<div class="sc_promo_content sc_item_content">
@@ -512,7 +497,6 @@
 <li class="menu-item"><a href="vinhos.html"><span>Vinhos</span></a></li>
 <li class="menu-item"><a href="wine-bar.html"><span>Wine Bar</span></a></li>
 <li class="menu-item"><a href="experiencias.html"><span>Experiências</span></a></li>
-<li class="menu-item"><a href="caderno-dos-ventos.html"><span>Caderno dos Ventos</span></a></li>
 <li class="menu-item"><a href="visite-nos.html"><span>Visite-nos</span></a></li>
 </ul>
 				</nav>

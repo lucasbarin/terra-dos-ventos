@@ -10,7 +10,7 @@
 - [x] 4A–4D vinhos e fichas
 - [x] 5 Wine Bar no estado “A mesa está sendo preparada”
 - [x] 6A–6C experiências em HTML direto
-- [x] 7 Caderno dos Ventos sem posts demo
+- [x] 7 Caderno dos Ventos retirado do site público em 08/10/2026
 - [x] 8 Visite-nos, 404 e páginas demo em `_laon-unused`
 - [x] 9 animações nativas `data-animation` e `prefers-reduced-motion`
 - [x] 10 `lang="pt-BR"`, uma H1, `maximum-scale` removido, busca oculta
