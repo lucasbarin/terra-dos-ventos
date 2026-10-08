@@ -94,15 +94,35 @@ select,
 .menu_mobile .menu_mobile_nav_area > ul > li > a,
 .menu_side_nav > li > a {
 	font-family: var(--tdv-font-primary);
-	font-weight: 400;
-	letter-spacing: 0.03em;
 	font-synthesis: none;
 }
 
-/* A Times em caixa alta é mais larga que a sans do tema. */
-.menu_main_nav > li > a {
-	padding-left: 16px;
-	padding-right: 16px;
+.menu_footer_nav > li > a,
+.menu_mobile .menu_mobile_nav_area > ul > li > a,
+.menu_side_nav > li > a {
+	font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+/* Menu das internas e barra fixa: 11px, negrito e o respiro do tema. */
+@media (min-width: 768px) {
+	.menu_main_nav_area {
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	.menu_main_nav > li > a {
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		padding: 11px 27.5px;
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+	.menu_main_nav > li > a {
+		padding: 11px 22px;
+	}
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -221,21 +241,6 @@ a.sc_button_simple {
 	letter-spacing: 0.08em;
 }
 
-.menu_main_nav > li.tdv-menu-cta > a,
-.menu_mobile_nav > li.tdv-menu-cta > a {
-	background: var(--tdv-bege);
-	color: var(--tdv-roxo) !important;
-	padding: 0.45em 0.9em;
-	font-weight: 700;
-	letter-spacing: 0.06em;
-}
-
-.menu_main_nav > li.tdv-menu-cta > a:hover,
-.menu_mobile_nav > li.tdv-menu-cta > a:hover {
-	background: #fff;
-	color: var(--tdv-roxo) !important;
-}
-
 .tdv-logo,
 .logo_main,
 .logo_footer_image {
@@ -246,24 +251,77 @@ a.sc_button_simple {
 }
 
 .logo img.tdv-logo--header,
-.logo img.logo_main:not(.tdv-logo--hero) {
-	height: 8.9em;
-	width: auto;
-	max-width: none;
-	max-height: none;
-}
-
+.logo img.logo_main:not(.tdv-logo--hero),
 .logo img.tdv-logo--hero {
 	height: 7em;
+	width: auto;
+	max-width: none;
 	max-height: 7em;
 }
 
-/* O tema reduz o padding-top do header abaixo de 1680px.
-   No hero, o afastamento grande (5.7em) vale também nos desktops menores. */
+/* Mesma distância do topo da home, também abaixo de 1680px. */
 @media (min-width: 768px) {
-	.home.header_position_over .top_panel_navi {
+	.top_panel_navi {
 		padding-top: 5.7em;
 	}
+}
+
+.site_footer_wrap.scheme_dark,
+.site_footer_wrap .scheme_dark {
+	background-color: #9E795D !important;
+	color: #fff;
+	min-height: 0 !important;
+	height: auto !important;
+}
+
+.site_footer_wrap {
+	display: block;
+	min-height: 0 !important;
+	height: auto !important;
+	margin: 0;
+	padding: 0;
+	position: relative !important;
+	top: auto !important;
+	text-align: center;
+}
+
+.site_footer_wrap .top_panel_mask {
+	display: none !important;
+}
+
+.site_footer_wrap > .logo_footer_wrap,
+.site_footer_wrap > .socials_footer_wrap,
+.site_footer_wrap > .menu_footer_wrap,
+.site_footer_wrap > .copyright_wrap {
+	display: block;
+	width: 100%;
+	float: none;
+}
+
+.site_footer_wrap .socials_footer_wrap {
+	display: block !important;
+}
+
+.site_footer_wrap .logo_footer_wrap_inner {
+	padding: 3.4em 0 2.5em;
+	overflow: visible;
+	text-align: center;
+	position: relative;
+	border: 0 !important;
+}
+
+.site_footer_wrap .logo_footer_wrap_inner:after {
+	display: block !important;
+	content: " ";
+	position: absolute;
+	left: 50%;
+	right: auto;
+	top: auto;
+	bottom: 0;
+	width: 1px;
+	height: 2.5em;
+	margin: 0;
+	background-color: #fff;
 }
 
 .logo_footer_wrap img.tdv-logo--footer,
@@ -272,8 +330,72 @@ a.sc_button_simple {
 	width: auto;
 	max-height: none;
 	max-width: none;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 1.4em;
+}
+
+.site_footer_wrap .socials_footer_wrap_inner {
+	padding: 2.2em 0 1.1em;
+	text-align: center;
+	border: 0 !important;
+}
+
+.site_footer_wrap.scheme_dark .socials_footer_wrap_inner .social_item .social_icons,
+.site_footer_wrap.scheme_dark .socials_footer_wrap_inner .social_item .social_icons span:before {
+	border-color: #fff;
+	color: #fff;
+}
+
+.site_footer_wrap.scheme_dark .socials_footer_wrap_inner .social_item .social_icons:hover,
+.site_footer_wrap.scheme_dark .socials_footer_wrap_inner .social_item .social_icons:hover span:before {
+	border-color: #fff;
+	color: #fff;
+	opacity: 0.72;
+}
+
+.site_footer_wrap .menu_footer_wrap_inner {
+	padding: 1.15em 1rem 1.3em;
+	text-align: center;
+	border: 0 !important;
+}
+
+.site_footer_wrap .menu_footer_nav_area ul li {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+
+.site_footer_wrap.scheme_dark .menu_footer_nav_area ul li a,
+.site_footer_wrap.scheme_dark .copyright_text,
+.site_footer_wrap.scheme_dark .copyright_text p {
+	color: #fff;
+}
+
+.site_footer_wrap.scheme_dark .menu_footer_nav_area ul li a:hover {
+	color: #fff;
+	opacity: 0.72;
+}
+
+.site_footer_wrap .menu_footer_nav_area ul li + li:before {
+	margin: 0 2.2em;
+	border-left-color: rgba(255, 255, 255, 0.75);
+}
+
+.site_footer_wrap .copyright_wrap_inner {
+	padding: 0.4em 1.5rem 2.4em;
+	border: 0 !important;
+	text-align: center;
+	font-size: 0.72rem;
+	font-style: italic;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+}
+
+.site_footer_wrap .tdv-footer-note {
+	margin: 0.2em 0;
+}
+
+.site_footer_wrap .tdv-motto {
+	font-size: 1.05rem;
 }
 
 /* Busca do WordPress não tem backend. */
@@ -285,8 +407,7 @@ a.sc_button_simple {
 }
 
 .socials_wrap,
-.socials_mobile,
-.socials_footer_wrap {
+.socials_mobile {
 	display: none !important;
 }
 
@@ -390,6 +511,10 @@ a.sc_button_simple {
 	display: inline-block;
 	height: 4.2em;
 	width: auto;
+}
+
+.vc_column-inner.tdv-winebar-band {
+	background-image: url("../images/winebar/hero-principal.jpg") !important;
 }
 
 .tdv-wide-photo {
@@ -693,6 +818,63 @@ a.sc_button_simple {
 .tdv-delay-3 { animation-delay: 240ms; }
 .tdv-delay-4 { animation-delay: 320ms; }
 
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 24px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.animated {
+	animation-duration: 0.9s;
+	animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tdv-letters .tdv-char {
+	display: inline;
+	opacity: 0;
+	animation: tdvLetterIn 0.2s ease forwards;
+	animation-play-state: paused;
+}
+
+.tdv-letters.is-visible .tdv-char {
+	animation-play-state: running;
+}
+
+.tdv-seq-host[data-animation^="animated"],
+.tdv-seq-host.animated {
+	animation: none !important;
+	opacity: 1 !important;
+	transform: none !important;
+	visibility: visible !important;
+}
+
+.tdv-rise {
+	opacity: 0;
+	transform: translate3d(0, 18px, 0);
+}
+
+.tdv-rise.is-visible {
+	animation: tdvRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+	animation-delay: var(--tdv-delay, 0ms);
+}
+
+@keyframes tdvRise {
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes tdvLetterIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 @media (max-width: 767px) {
 	.top_panel_title_wrap {
 		position: relative !important;
@@ -733,12 +915,7 @@ a.sc_button_simple {
 	}
 
 	.logo img.tdv-logo--header,
-	.logo img.logo_main:not(.tdv-logo--hero) {
-		height: 7.2em;
-		max-height: 7.2em;
-		max-width: calc(100vw - 4.5rem);
-	}
-
+	.logo img.logo_main:not(.tdv-logo--hero),
 	.logo img.tdv-logo--hero {
 		max-width: calc(100vw - 4.5rem);
 	}
@@ -754,7 +931,9 @@ a.sc_button_simple {
 	}
 
 	[data-animation^="animated"],
-	.animated {
+	.animated,
+	.tdv-letters .tdv-char,
+	.tdv-rise {
 		animation: none !important;
 		transition: none !important;
 		transform: none !important;
