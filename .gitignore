@@ -10,3 +10,7 @@ Thumbs.db
 node_modules/
 vendor/
 .development-files/
+.initial-directions/
+_laon-unused/
+TDV_STATUS.md
+changelog.txt

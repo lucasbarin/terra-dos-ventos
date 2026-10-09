@@ -1,0 +1,42 @@
+# Publica a raiz do site no FTP a cada push em main.
+# Secrets do repositório: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_SERVER_DIR
+# FTP_SERVER_DIR é a pasta pública no servidor, por exemplo public_html/
+name: Deploy FTP
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ftp-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publicar por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.development-files/**
+            **/.initial-directions/**
+            **/_laon-unused/**
+            **/TDV_STATUS.md
+            **/changelog.txt
+            **/.vscode/**
+            **/.idea/**
